@@ -2,10 +2,9 @@ h1 {
   text-align: center;
 }
 
-table input {
+form {
   margin: auto;
-  display: inline-block;
-  position: relative;
+  display: block;
   margin-bottom: 10px;
 }
 

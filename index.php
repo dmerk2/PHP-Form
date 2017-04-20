@@ -1,3 +1,4 @@
+
 <html>
 <head>
   <title>php</title>
@@ -6,16 +7,21 @@
 
 <?php
 
-$localhost = 'http://localhost:8888/php/basicForm/index.php';
 $userName = $_POST['username'];
 $Password = $_POST['password'];
 $Email = $_POST['email'];
+
 
 echo $userName . '</br>';
 echo $Password . '</br>';
 echo $Email . '</br>';
 
+
+date_default_timezone_set('UTC');
+echo date('h:i:s a Y');
+
 ?>
+
 
 </body>
 </html>
