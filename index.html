@@ -10,26 +10,32 @@
 
 <body>
   <h1>Log in Here</h1>
-  <form action="index.php" method="POST">
-    <div class="container">
-      <table>
-        <label>Username:
-          <input type="text" name="username" />
-        </label>
-        <label>Password:
-          <input type="password" name="password" />
-        </label>
-        <label>E-Mail:
-          <input type="email" name="email" />
-        </label>
-        <label>Remember Me
-          <input type="checkbox" id="checkbox" />
-          <div>
-            <button class="btn btn-primary" type="submit" id="submit">Sign In</button>
-          </div>
-        </label>
-      </table>
-    </div>
+  <form action="index.php" method="POST" autocomplete="on">
+    <label>Username:
+      <input type="text" name="username" />
+    </label>
+    <label>Password:
+      <input type="password" name="password" />
+    </label>
+    <label>E-Mail:
+      <input type="email" name="email" />
+    </label>
+    <label>Birthday:
+      <input type="date" name="bday" min="1999-01-01" />
+    </label>
+    <br/>
+    <label>Remember Me
+      <input type="checkbox" id="checkbox" />
+      <div>
+        <button type="submit" id="submit">Sign In</button>
+      </div>
+    </label>
+  </form>
+  <form action="uploadFiles.php" method="post" enctype="multipart/form-data">
+    <label for="file"><span>Filename:</span></label>
+    <input type="file" name="file" id="file" />
+    <br />
+    <input type="submit" name="submit" value="Submit" />
   </form>
 </body>
 
